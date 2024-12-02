@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .all-home {
   position: relative;
   display: flex;
@@ -6,6 +9,7 @@
   height: 600px;
   /* WIDTH: 600px; */
   left: 20px;
+  
 }
 .top {
   width: 851px;
@@ -84,10 +88,11 @@
 }
 
 .rectangle {
-  background-color: #727180;
-  width: 100%;
+    background: linear-gradient(0deg, rgba(30,29,25,1) 0%, rgba(114,113,128,1) 46%);
+    width: 100%;
   height: 100%;
   border: 2px solid;
+  ;
 }
 .porte {
   position: absolute;
@@ -143,6 +148,7 @@
   grid-template-rows: repeat(6, 18px);
   overflow: hidden;
   left: 46px;
+
 }
 .right-serjem {
   position: absolute;
@@ -279,6 +285,7 @@
   grid-template-columns: repeat(5, 30px);
   grid-template-rows: repeat(3, 24px);
   overflow: hidden;
+  cursor: pointer;
 }
 .left-serjem2 {
   position: absolute;
@@ -338,4 +345,22 @@
   right: 159px;
   bottom: 235px;
   z-index: 1001;
+}
+.fullscreen-image {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+}
+
+.fullscreen-image img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: 1000001;
 }

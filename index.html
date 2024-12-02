@@ -247,7 +247,23 @@
             <div class="rbi33"> </div>
             <div class="ghosn1"></div>
             <div class="ghosn2"></div>
+            <div class="fullscreen-image" id="fullscreenContainer">
+                <img src="img/images.jpg" alt="Image en plein écran">
+            </div>
+            
         </div>
-    
+        
+    <script>
+        const middleSerjem2 = document.querySelector('.middle-serjem2');
+        const fullscreenContainer = document.getElementById('fullscreenContainer');
+
+        middleSerjem2.addEventListener('click', () => {
+            fullscreenContainer.style.display = 'flex';
+        });
+
+        fullscreenContainer.addEventListener('click', () => {
+            fullscreenContainer.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
