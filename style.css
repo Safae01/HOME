@@ -287,6 +287,12 @@ body{
   overflow: hidden;
   cursor: pointer;
 }
+.shadow{
+    border: 10px solid #b6b6b6;
+    width: 728px;
+    position: absolute;
+    top: 31px;
+}
 .left-serjem2 {
   position: absolute;
   border: 2px solid black;
