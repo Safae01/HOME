@@ -1,5 +1,10 @@
-body{
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Simplifie la gestion des dimensions */
+}
+body {
+  overflow: hidden;
 }
 .all-home {
   position: relative;
@@ -9,7 +14,6 @@ body{
   height: 600px;
   /* WIDTH: 600px; */
   left: 20px;
-  
 }
 .top {
   width: 851px;
@@ -88,11 +92,14 @@ body{
 }
 
 .rectangle {
-    background: linear-gradient(0deg, rgba(30,29,25,1) 0%, rgba(114,113,128,1) 46%);
-    width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(30, 29, 25, 1) 0%,
+    rgba(114, 113, 128, 1) 46%
+  );
+  width: 100%;
   height: 100%;
   border: 2px solid;
-  ;
 }
 .porte {
   position: absolute;
@@ -148,7 +155,6 @@ body{
   grid-template-rows: repeat(6, 18px);
   overflow: hidden;
   left: 46px;
-
 }
 .right-serjem {
   position: absolute;
@@ -157,7 +163,7 @@ body{
   width: 137px;
   top: 83px;
   display: grid;
-  grid-template-columns: repeat(4, 45px);
+  grid-template-columns: repeat(4, 34px);
   grid-template-rows: repeat(6, 18px);
   overflow: hidden;
   right: 45px;
@@ -287,11 +293,11 @@ body{
   overflow: hidden;
   cursor: pointer;
 }
-.shadow{
-    border: 10px solid #b6b6b6;
-    width: 728px;
-    position: absolute;
-    top: 31px;
+.shadow {
+  border: 10px solid #b6b6b6;
+  width: 728px;
+  position: absolute;
+  top: 31px;
 }
 .left-serjem2 {
   position: absolute;
@@ -357,16 +363,30 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10000;
-  justify-content: center;
 }
-
 .fullscreen-image img {
   max-width: 100%;
   max-height: 100%;
   position: relative;
   z-index: 1000001;
+  object-fit: cover;
+}
+.memory-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  grid-column: 1 / -1; 
+    grid-row: 1 / -1
+}
+.matched  {
+  display: block !important;
+  z-index: 20;
+}
+.has-matched-image .rectangle {
+  display: none;
 }
